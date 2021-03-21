@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(102, 99, 99);
+}
+
+
+.container {
+    box-sizing: border-box;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: #fff;
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    border-radius: 1%;
+    text-align: center;
+}
+
+.form-heading {
+    margin-bottom: 2rem;
+}
+
+.form-heading h1 {
+    font-size: 2rem;
+}
+.form-heading p {
+    font-size: .8rem;
+}
+
+
+form {
+    width: 100%;
+    max-width: 40rem;
+}
+
+.input-group {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    border-bottom: .5px solid rgba(179, 176, 176, 0.705);
+}
+
+.input-group input {
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    margin-top: .5rem;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.input-group i{
+    padding-left: 0;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: rgb(102, 99, 99);
+    cursor: pointer;
+}
+
+form button {
+    position: relative;
+    width: 80%;
+    padding: 1rem 0;
+    border: none;
+    margin-top: .5rem;
+    outline: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: none;
+    font-size: 1.2;
+    color: #fff;
+    background: rgb(7, 117, 80);
+    font-weight: 700;
+}
+
+small {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+small a {
+    text-decoration: none;
+    color: rgb(7, 117, 80);
+}
+
+
+
+
+#lb_uname {
+    border: none;
+    color: red;
+    visibility: hidden;
+}
+
+#lb_pwd {
+    border: none;
+    color: red;
+    visibility: hidden;
+}
+
+#lb_cpwd {
+    border: none;
+    color: red;
+    visibility: hidden;
+}
+
+#lb_email {
+    border: none;
+    color: red;
+    visibility: hidden;
+}
+
+
+@media (max-width: 400px){
+    .form-heading h1 {
+        font-size: 1.5rem;
+    }
+    .form-heading p {
+        font-size: .6rem;
+    }
+    small {
+        font-size: 0.6rem;
+    }
+    .input-group > i{
+        font-size: 1.2rem;
+    }
+}

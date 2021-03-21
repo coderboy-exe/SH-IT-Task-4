@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/73888c59c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Task 4</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-heading">
+                <h1>Create Account</h1>
+            <br>
+            <p>It's free and hardly takes more than 30 seconds</p>
+            </div>
+            
+            
+            <form onsubmit="return validate()" action="welcome.html">
+                
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input id="uname" placeholder="Username" type="text"> <br>
+                    <label id="lb_uname">Invalid Username</label>
+                </div>
+                <br><br>
+
+                <div class="input-group">
+                    <i class="fab fa-telegram-plane"></i>
+                    <input id="email" placeholder="Email Address" type="email" > <br>
+                    <label id="lb_email">Invalid email</label>
+                </div>
+                <br><br>
+
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input id="pwd" placeholder="Password" type="password" name="password"> <i class="fas fa-eye" id="togglePassword"></i> <br>
+                    <label id="lb_pwd">Password must be a minimum of 8 characters</label>
+                </div>
+                <br><br>
+
+                <div class="input-group">
+                    <i class="fas fa-user-lock"></i>
+                    <input id="cpwd" placeholder="Confirm password" type="text"><br>
+                    <label id="lb_cpwd">Passwords must match</label>
+                </div>      
+                <br><br>
+        
+                <button type="submit">Sign Up</button>
+                <br>
+            </form>
+            <br>
+            <small>By clicking the Sign Up button you agree to our <br><a href="">Terms & Conditions</a>, and
+                <a href="">Privacy Policy</a>.
+            </small>
+        </div>
+    </div>
+   
+    <script src="index.js"></script>
+    
+</body>
+</html>
