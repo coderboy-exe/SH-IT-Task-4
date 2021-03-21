@@ -13,7 +13,7 @@ body {
 
 .container {
     box-sizing: border-box;
-    width: 80%;
+    width: 90%;
     height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -64,16 +64,21 @@ form {
     border: none;
     margin-top: .5rem;
     outline: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .input-group i{
     padding-left: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 1rem;
     color: rgb(102, 99, 99);
     cursor: pointer;
 }
+
+.input-group .fa-eye {
+    margin-right: -12rem;
+}
+
 
 form button {
     position: relative;
@@ -139,7 +144,10 @@ small a {
     small {
         font-size: 0.6rem;
     }
+    .input-group input {
+        font-size: small;
+    }
     .input-group > i{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
